@@ -1,0 +1,416 @@
+*{
+  margin:0;
+  padding:0;
+  }
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  }
+body{
+  box-sizing: border-box;
+  }
+.grid{
+	display:grid;
+  }
+  .wrapper{
+	max-width: 1200px;
+	margin: auto;
+  }
+header{
+	height:100vh;
+	background-image: url(../img/background-1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+header a img{
+	width:30rem;
+	padding-left:4rem;
+}
+header div#infos{
+	width:950px;
+	margin-top:25rem;
+}
+header div#infos p:first-of-type{
+	font-family: karla, arial, sans-serif;
+	font-size:3rem;
+	color:white;
+	text-align:center;
+	margin-bottom:2rem;
+}
+header div#infos p:first-of-type span{
+	color:#068DFF;
+}
+header div#infos p:last-of-type{
+	font-family: heavitas, arial, sans-serif;
+	font-size: 4rem;
+	color:white;
+	text-align: center;
+	margin-bottom:6rem;
+}
+header div#infos a{
+	justify-self:center;
+	text-align: center;
+	background-color: white;
+	text-decoration: none;
+	color:black;
+	font-family:karla, arial, sans-serif;
+	font-size:2rem;
+	padding:1rem;
+	transform: scale(1);
+	transition:.5s;
+}
+header div#infos a:hover{
+	transform: scale(1.1);
+}
+header #menu-burger input{
+    display:none;
+}
+header nav label{
+  display:block;
+  position:fixed;
+  z-index:2;
+  top:0;
+  right:0;
+  padding:4rem;
+}
+header nav label span{
+  display: block;
+  width: 5rem;
+  height: .5rem;
+  margin-bottom: 1rem;
+  position: relative; 
+  background-color: black;
+  border-radius: .3rem;
+  transition:.5s;
+}
+header nav input:checked + label span {
+  background-color:white;
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(-10rem, -1rem);
+  transform: rotate(45deg) translate(-1rem, -1rem);
+}
+header nav input:checked + label span:nth-last-child(3){
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+header nav input:checked + label span:nth-last-child(2){
+  opacity: 1;
+  -webkit-transform: rotate(-45deg) translate(0, -.1rem);
+  transform: rotate(-45deg) translate(0, -.1rem);
+}
+header nav #menu{
+	visibility: hidden;
+  padding-top:12rem;
+  width:100vw;
+  height:100vh;
+  background-color: black;
+  position:fixed;
+  top:0;
+  right:0;
+  opacity:0;
+  transform:translate(99.9rem);
+  z-index:1;
+  transition:.5s;
+}
+header nav input:checked ~ #menu{
+	visibility: visible;
+  opacity:1;
+  transform:translate(0);
+}
+header nav #menu ul{
+  padding-left:7rem;
+}
+header nav #menu ul li{
+  list-style: none;
+}
+header nav #menu ul li a{
+  display:block;
+  text-decoration:none;
+  color:white;
+  font-size:2rem;
+  font-family:heavitas,karla, arial, sans-serif;
+  padding:3rem 0;
+  font-weight: 500;
+  transition:color.5s;
+  text-align: center;
+}
+header nav #menu ul li a:hover{
+  color:#FFAA00;
+}
+/*  ----------------------------------------------------------------a propos--------------------------------------------*/
+section#apropos, section#plomberie{
+	background-image: url(../img/background-2.jpg);
+	background-size: cover;
+}
+section#apropos h1{
+	font-family:heavitas,karla, arial, sans-serif;
+	font-size:3.5rem; 
+	margin:auto;
+	text-align: center;
+	padding:10rem 0 5rem;
+	width:100vmin;
+}
+section#apropos div{
+	grid-template-columns: 1fr 1fr;
+}
+section#apropos img{
+	width:70rem;
+	justify-self:center;
+	align-self: center;
+}
+section#apropos div#paragraphe-apropos{
+	justify-self:center;
+	align-self: center;
+}
+section#apropos p{
+	font-family: karla, arial, sans-serif;
+	font-size:1.8rem;
+	grid-column: 2/3;
+	padding:2rem 0;
+
+}
+section#apropos p span{
+	font-weight: 900;
+}
+section#apropos p a{
+	color:black;
+	font-weight: 900;
+	font-size:2rem;
+}
+/*-------------------------------------------------------électricité------------------------*/
+section#electricite{
+	background-image: url(../img/background-3.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+div.conteneur{
+	padding:20rem 0;
+}
+section#electricite div.texte-gauche{
+	border-left:solid #FFAA00 5px;
+	padding:5rem 0;
+}
+.h2-gauche{
+	font-family: heavitas, karla, arial, sans-serif;
+	font-size:3rem;
+	color:white;
+	padding:0rem 10rem 5rem;
+}
+.services-gauches{
+	font-family: karla,arial,sans-serif;
+	font-size:2.5rem;
+	color:white;
+	padding-left:10rem;
+	text-shadow: 2px 2px 2px #000;
+}
+section#electricite a:last-of-type{
+	color:#FFAA00;
+	padding:3rem 10rem;
+	display: block;
+	font-size: 1.8rem;
+	font-family: karla,arial,sans-serif;
+}
+/*------------------------------------------------------Plomberie-----------------------------*/
+div.texte-droite{
+	border-right: solid #0492A2 5px;
+	padding: 10rem 0;
+	height:300px;
+	margin:5rem 0;
+} 
+section#plomberie .grid{
+	grid-template-columns: 1fr 1fr;
+}
+.h2-droit{
+	font-family: heavitas, karla, arial, sans-serif;
+	font-size:3rem;
+	padding:0rem 10rem 5rem;
+	text-align: right;
+}
+.services-droites{
+	font-family: karla,arial,sans-serif;
+	font-size:2.5rem;
+	padding-right:10rem;
+	text-align: right;
+}
+section#plomberie a:last-of-type{
+	color:#0492A2;
+	padding:3rem 10rem;
+	display: block;
+	font-size: 1.8rem;
+	font-family: karla,arial,sans-serif;
+	text-align: right;
+}
+/*-----------------------------------------------Chauffage----------------------------*/
+section#chauffage{
+	background-image: url(../img/background-4.1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+section#chauffage div.texte-gauche{
+	border-left:solid #FF0000 5px;
+	padding:5rem 0;
+}
+section#chauffage a:last-of-type{
+	color:#FF0000;
+	padding:3rem 10rem;
+	display: block;
+	font-size: 1.8rem;
+	font-family: karla,arial,sans-serif;
+}
+/*----------------------------------------automatisme------------------------------------------*/
+section#automatisme{
+	background-image: url(../img/background-2.jpg);
+	background-size: cover;
+}
+section#automatisme .grid{
+	grid-template-columns: 1fr 1fr;
+}
+section#automatisme div.texte-droite{
+	border-right: solid #289103 5px;
+	margin:10rem 0;
+	height: 200px;
+}
+section#automatisme a:last-of-type{
+	color:#289103;
+	padding:3rem 10rem;
+	display: block;
+	font-size: 1.8rem;
+	font-family: karla,arial,sans-serif;
+	text-align: right;
+}
+/*-----------------------------------------rénovation---------------------------------------------*/
+section#renovation{
+	background-image: url(../img/background-5.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+section#renovation div.texte-gauche{
+	border-left:solid #FF6F00 5px;
+	padding:5rem 0;
+}
+section#renovation p{
+	text-shadow: none;
+}
+section#renovation a:last-of-type{
+	color:#FF6F00;
+	padding:3rem 10rem;
+	display: block;
+	font-size: 1.8rem;
+	font-family: karla,arial,sans-serif;
+}
+/*------------------------------------------contact---------------------------------------*/
+/*--------------------------------------------responsive--------------------------------------*/
+@media screen and (max-width:1589px){
+	header{
+		background-image: url(../img/background-1responsive.jpg);
+		height:996px;
+	}
+	header div#infos{
+		margin: auto;
+	    background-color: black;
+	    padding: 15rem 5rem;
+	    margin-top: 10rem;
+	}
+}
+@media screen and (max-width:1200px){
+	header div#infos{
+		width:70vmin;
+	}
+	section#apropos h1{
+		width:90vmin;
+	}
+	section#electricite .texte-gauche, section#chauffage .texte-gauche, section#renovation .texte-gauche{
+		width: 500px;
+    	margin: auto;
+	}
+	section#plomberie div.grid,section#automatisme div.grid, section#apropos div.grid{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	section#plomberie div img,section#automatisme div img, section#apropos div img{
+		justify-self:center;
+	}
+	section#plomberie div img,section#automatisme div img{
+		grid-row:2/3;
+	}
+	div.texte-droite{
+		border-top: solid #0492A2 5px;
+		border-right:none;
+    	padding: 10rem 0;
+    	height: 300px;
+    	margin: 0; 
+    	justify-self: center;
+	}
+	section#automatisme div.texte-droite{
+		border-top: solid #289103 5px;
+		border-right:none;
+	}
+	div.conteneur{
+		padding: 10rem 0;
+	}
+	section#apropos p{
+		width: 80vmin;
+    	margin: auto;}
+    #paragraphe-apropos{
+    	padding-bottom:20rem;
+    }
+}
+@media screen and (max-width:720px){
+	header a img{
+		padding:0;
+		display: block;
+    	margin: auto;
+	}
+	header div#infos{
+		width:60vmin;
+	}
+	section#apropos div.grid{
+		grid-template-columns: 1fr;
+		grid-template-rows: 380px 1fr;
+	}
+	section#plomberie div img,section#automatisme div img, section#apropos div img{
+		width:100vmin;
+	}
+	section#electricite .texte-gauche, section#chauffage .texte-gauche, section#renovation .texte-gauche{
+		width: 70vmin;
+	}
+	section div p{
+		font-size:1.6rem!important;
+	}
+	section#plomberie div p,section#automatisme div p{
+		text-align: left!important;
+		padding-left: 10rem!important;
+	}
+	section div a:last-of-type{
+		text-align:left!important;
+	}
+	header div#infos p:first-of-type{
+		font-size:2.5rem;
+	}
+	header div#infos p:last-of-type{
+		font-size:2.5rem;
+	}
+	div.texte-droite{
+		width:400px;
+	}
+	section#automatisme div.texte-droite{
+		width:400px;
+	}
+	.h2-droit{
+    padding-bottom: 5rem;
+    text-align: center;
+	}
+	.h2-gauche{
+		padding-left:5rem;
+	}
+	section#automatisme div.conteneur{
+		padding:0;
+	}
+	div.texte-gauche p{
+		padding-left:5rem;
+	}
+	section#electricite a:last-of-type,section#chauffage a:last-of-type,section#renovation a:last-of-type{
+		padding:3rem 5rem;
+	}
+}
