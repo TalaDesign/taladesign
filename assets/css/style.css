@@ -305,7 +305,7 @@ section#contact h2 {
 	font-size:3rem;
   text-align:center;
   color:white;
-  padding: 15rem 3rem 5rem;
+  padding: 10% 5% 5%;
 }
 section#contact div.grid{
 	padding-bottom:5rem;
@@ -510,7 +510,7 @@ footer div a{
 }
 @media screen and (max-width:600px){
 	section#contact h2{
-		font-size:2rem;
+		font-size:3rem;
 	}
 	section#contact div p{
     	padding-left: 5rem;
