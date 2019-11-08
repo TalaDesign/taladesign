@@ -397,8 +397,8 @@ footer div a{
 	header div#infos{
 		margin: auto;
 	    background-color: black;
-	    padding: 15rem 5rem;
-	    margin-top: 10rem;
+	    padding: 10rem 5rem;
+	    margin-top: 5rem;
 	}
 }
 @media screen and (max-width:1200px){
@@ -445,7 +445,9 @@ footer div a{
     }
 }
 @media screen and (max-width:720px){
-
+	header{
+		height:800px;
+	}
 	header a img{
 		width:20rem;
 		padding:0;
