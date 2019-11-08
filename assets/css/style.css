@@ -300,6 +300,92 @@ section#renovation a:last-of-type{
 	font-family: karla,arial,sans-serif;
 }
 /*------------------------------------------contact---------------------------------------*/
+section#contact h2 {
+  font-family: heavitas, karla, arial, sans-serif;
+	font-size:3rem;
+  text-align:center;
+  color:white;
+  padding: 15rem 10rem 5rem;
+}
+section#contact div.grid{
+	padding-bottom:5rem;
+}
+section#contact div div{
+	width:450px;
+	margin:5rem auto 0;
+}
+section#contact div p{
+	font-size: 2rem;
+	font-family:karla,arial,sans-serif;
+	color:white;
+}
+section#contact div p a{
+	color:#FFAA00;
+}
+
+section#contact .f-input::placeholder {
+  color:black;
+  opacity:0.9;
+}
+
+section#contact .f-input {
+  border:2px solid #FFAA00;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+   color:black;
+  font-family: karla, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 4px;
+  line-height: 22px;
+  text-align:left;
+}
+section#contact{
+  background-color: black;
+}
+
+section#contact .f-input:focus { 
+  border:2px solid grey; }
+
+section#contact textarea {
+  height: 250px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+section#contact button {
+  max-width:450px;
+  font-family: karla,Arial, sans-serif;
+  width: 100%;
+  background:#FFAA00;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  text-align:center;
+  transition: all 0.3s;
+  font-weight:600; 
+}
+section#contact button:hover {
+  
+ background:#3a3939; 
+}
+/*----------------------------------------------footer---------------------*/
+footer div p{
+  text-align: center;
+  font-family:karla, arial, sans-serif;
+  font-size:1.6rem;
+  color:black;
+  padding:2rem 0;
+}
+footer div a{
+  text-decoration: none;
+}
 /*--------------------------------------------responsive--------------------------------------*/
 @media screen and (max-width:1589px){
 	header{
@@ -414,3 +500,13 @@ section#renovation a:last-of-type{
 		padding:3rem 5rem;
 	}
 }
+@media screen and (max-width:600px){
+	section#contact div.grid{
+		padding:1rem;
+	}
+	section#contact h2{
+		width: 90vmin
+	}
+	section#contact form{
+		width:80vmin;
+	}
