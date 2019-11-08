@@ -79,7 +79,7 @@ header nav label span{
   height: .5rem;
   margin-bottom: 1rem;
   position: relative; 
-  background-color: black;
+  background-color: #FFAA00;
   border-radius: .3rem;
   transition:.5s;
 }
@@ -120,6 +120,7 @@ header nav input:checked ~ #menu{
 }
 header nav #menu ul{
   padding-left:7rem;
+  height:70vh;
 }
 header nav #menu ul li{
   list-style: none;
