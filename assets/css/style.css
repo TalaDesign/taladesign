@@ -392,10 +392,10 @@ section#renovation a:last-of-type{
 		font-size:2.5rem;
 	}
 	div.texte-droite{
-		width:400px;
+		width:98vmin;
 	}
 	section#automatisme div.texte-droite{
-		width:400px;
+		width:98vmin;
 	}
 	.h2-droit{
     padding-bottom: 5rem;
