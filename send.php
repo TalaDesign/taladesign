@@ -30,7 +30,7 @@ else{
 	$message = $_POST['message'];
 	$headers = 'FROM :'. $email;
 
-	if ( mail($email_destinataire, $object, $message, $headers) ){
+	if ( mail($name, $email_destinataire, $telephone, $message, $headers) ){
 		$_SESSION['Entreprise Carnonaise']['success'] = 1;
 		
 	}else{
